@@ -380,7 +380,9 @@ a {
   font-size: 15px;
 }
 
-.nosotros__text .btn {
+.nosotros__btn {
+  grid-column: 1;
+  align-self: start;
   margin-top: 8px;
 }
 
@@ -531,11 +533,17 @@ a {
 
   .nosotros__inner {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 24px;
   }
 
   .nosotros__img {
-    order: -1;
+    order: 0;
+  }
+
+  .nosotros__btn {
+    grid-column: 1;
+    margin-top: 0;
+    width: fit-content;
   }
 
   .instagram__inner {
@@ -550,7 +558,35 @@ a {
 
 @media (max-width: 480px) {
   .hero {
-    padding: 70px 0 60px;
+    padding: 130px 24px 80px;
+    background-position: 65% center;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero__inner {
+    width: 100%;
+  }
+
+  .hero__title {
+    font-size: 1.75rem;
+    line-height: 1.25;
+  }
+
+  .hero__tagline {
+    font-size: 14px;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
   }
 
   .productos__grid {
