@@ -147,7 +147,7 @@ a {
 .header.scrolled {
   background-color: rgba(250, 247, 244, 0.95);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .header__inner {
@@ -155,11 +155,26 @@ a {
   align-items: center;
   justify-content: space-between;
   height: 70px;
+  transition: height 0.3s ease;
+}
+
+.header.scrolled .header__inner {
+  height: 52px;
 }
 
 .header__logo img {
   height: 80px;
   width: auto;
+  transition: height 0.3s ease;
+}
+
+.header.scrolled .header__logo img {
+  height: 56px;
+}
+
+.header.scrolled .header__nav .btn {
+  padding: 6px 14px;
+  font-size: 12px;
 }
 
 .header__nav {
