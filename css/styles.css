@@ -191,7 +191,7 @@ a {
 =========================== */
 .hero {
   background-image: linear-gradient(rgba(20, 12, 4, 0.5), rgba(20, 12, 4, 0.5)),
-    url("https://dcdn-us.mitiendanube.com/stores/005/397/155/themes/morelia/2-slide-1769257818968-3028656639-e4492b93deea8f768723ecc4d71c019f1769257817-480-0.webp?1839538723536173603");
+    url("../img/img-hero.jpeg");
   background-size: cover;
   background-position: center;
   color: var(--color-white);
@@ -384,6 +384,9 @@ a {
   grid-column: 1;
   align-self: start;
   margin-top: 8px;
+  padding: 8px 18px;
+  font-size: 13px;
+  width: fit-content;
 }
 
 .nosotros__img img {
@@ -559,7 +562,7 @@ a {
 @media (max-width: 480px) {
   .hero {
     padding: 130px 24px 80px;
-    background-position: 65% center;
+    background-position: 30% center;
     min-height: 90vh;
     display: flex;
     align-items: center;
